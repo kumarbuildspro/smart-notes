@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Notes</title>
+  
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#4A90E2">
+  <link rel="apple-touch-icon" href="https://cdn-icons-png.flaticon.com/512/2965/2965358.png">
+</head>
+<body>
+
+  <div class="app-container">
+    <header>
+      <div class="brand">
+        <img src="https://cdn-icons-png.flaticon.com/512/2965/2965358.png" alt="Notes Logo" class="app-logo">
+        <h1>Smart Notes</h1>
+      </div>
+      <button id="theme-toggle" class="icon-btn" title="Theme Toggle">🌙</button>
+    </header>
+
+    <div class="controls">
+      <input type="text" id="search-input" placeholder="🔍 Notes khojein...">
+    </div>
+
+    <div class="note-input-card">
+      <input type="text" id="note-title" placeholder="Title (Heading)...">
+      <textarea id="note-content" placeholder="Apna note yahan likhein..." rows="3"></textarea>
+      <button id="save-btn">Note Save Karein</button>
+    </div>
+
+    <div class="notes-section">
+      <div id="notes-container" class="notes-grid"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
